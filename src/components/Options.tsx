@@ -24,7 +24,15 @@ const options = [
 export function Options() {
   return (
     <section className="bg-navy text-navy-foreground">
-      <div className="py-16 md:py-20 flex justify-center px-6">
+      <div className="py-16 md:py-20 flex flex-col items-center px-6">
+        <div className="text-center mb-12">
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-primary mb-3 whitespace-nowrap">
+            Ready to Make Poland Feel Like Home?
+          </h2>
+          <p className="uppercase tracking-[0.3em] text-xs text-navy-foreground/70">
+            Let's get you started
+          </p>
+        </div>
         <div className="grid grid-cols-2 gap-x-24 gap-y-12 w-fit">
           {options.map((o) => (
             <div key={o.title} className="flex flex-col items-start w-72">

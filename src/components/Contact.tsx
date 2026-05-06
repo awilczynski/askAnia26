@@ -7,15 +7,6 @@ export function Contact() {
   return (
     <section id="contact" className="bg-navy text-navy-foreground relative">
       <div className="mx-auto max-w-3xl px-6 md:px-12 py-12 md:py-16">
-        <div className="text-center mb-8">
-          <h2 className="font-display text-4xl md:text-5xl text-primary mb-3">
-            Ready to Make Poland Feel Like Home?
-          </h2>
-          <p className="uppercase tracking-[0.3em] text-xs text-navy-foreground/70">
-            Let's get you started
-          </p>
-        </div>
-
         <form
           action="https://formspree.io/f/mjglovnq"
           method="POST"
