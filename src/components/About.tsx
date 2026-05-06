@@ -22,10 +22,7 @@ export function About() {
             </p>
             <h2 className="font-display text-4xl md:text-5xl mb-6">I'm Ania!</h2>
             <p className="text-foreground/80 leading-relaxed max-w-md">
-              I've helped hundreds of newcomers find their footing in Poland — from
-              paperwork puzzles to finding the best pierogi in town. Whatever brings
-              you here, I'm here to make the journey easier, warmer, and a little more
-              human.
+              I started AskAnia because I kept getting the same question — from new colleagues, from clients' relocated teams, from friends of friends — how does this country actually work? The answer was always longer than a coffee. So I wrote it down. Now I help individuals and companies turn the move to Poland into something manageable, and occasionally even enjoyable.
             </p>
           </div>
         </div>

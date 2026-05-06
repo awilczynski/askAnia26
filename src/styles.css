@@ -38,9 +38,9 @@
   --color-stone: var(--stone);
   --color-ink: var(--ink);
 
-  --font-display: "Playfair Display", Georgia, serif;
-  --font-script: "Caveat", cursive;
-  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-script: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 :root {
