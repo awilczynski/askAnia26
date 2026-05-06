@@ -8,7 +8,7 @@ export function Hero() {
       <Navbar />
 
       {/* Skyline silhouette under logo */}
-      <div className="relative pt-28 md:pt-32 -mb-px">
+      <div className="relative pt-52 md:pt-60 -mb-px">
         <img
           src={skyline}
           alt="Warsaw skyline"
@@ -18,26 +18,30 @@ export function Hero() {
 
       {/* Peach content area */}
       <div className="bg-[#f9e4cd] text-peach-foreground">
-        <div className="mx-auto max-w-6xl px-6 md:px-12 py-16 md:py-20">
+        <div className="mx-auto max-w-6xl px-6 md:px-12 py-16 md:py-20 flex justify-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="max-w-2xl"
+            className="flex flex-col md:flex-row md:items-center md:gap-8 max-w-3xl"
           >
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.1] mb-6 text-navy">
-              Navigate Poland<br />with Confidence
-            </h1>
-            <p className="text-base md:text-lg text-navy/75 mb-8 max-w-xl">
-              From bureaucratic mazes to cultural surprises, transform your Polish journey
-              from overwhelming to achievable. Your step-by-step guide to thriving in Poland starts here.
-            </p>
-            <a
-              href="#journey"
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 rounded-sm font-medium hover:opacity-90 transition shadow-warm"
-            >
-              Get Your Guide
-            </a>
+            <div className="text-center">
+              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.1] mb-6 text-navy">
+                Navigate Poland<br />with Confidence
+              </h1>
+              <p className="text-base md:text-lg text-navy/75 max-w-xl mx-auto">
+                From bureaucratic mazes to cultural surprises, transform your Polish journey
+                from overwhelming to achievable. Your step-by-step guide to thriving in Poland starts here.
+              </p>
+            </div>
+            <div className="mt-8 md:mt-0 flex justify-center shrink-0">
+              <a
+                href="#journey"
+                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 rounded-sm font-medium hover:opacity-90 transition shadow-warm"
+              >
+                Get Your Guide
+              </a>
+            </div>
           </motion.div>
         </div>
       </div>
