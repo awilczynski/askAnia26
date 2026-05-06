@@ -17,16 +17,16 @@ export function Contact() {
         </div>
 
         <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            setSubmitted(true);
-          }}
+          action="https://formspree.io/f/mjglovnq"
+          method="POST"
+          onSubmit={() => setSubmitted(true)}
           className="grid md:grid-cols-2 gap-6"
         >
           <Field label="Your name">
             <input
               required
               type="text"
+              name="name"
               placeholder="Jane Doe"
               className="w-full bg-transparent border-b border-navy-foreground/30 py-3 text-navy-foreground placeholder:text-navy-foreground/40 focus:border-primary focus:outline-none transition"
             />
@@ -35,6 +35,7 @@ export function Contact() {
             <input
               required
               type="email"
+              name="email"
               placeholder="you@email.com"
               className="w-full bg-transparent border-b border-navy-foreground/30 py-3 text-navy-foreground placeholder:text-navy-foreground/40 focus:border-primary focus:outline-none transition"
             />
@@ -42,6 +43,7 @@ export function Contact() {
           <Field label="Where are you now?">
             <input
               type="text"
+              name="location"
               placeholder="Country"
               className="w-full bg-transparent border-b border-navy-foreground/30 py-3 text-navy-foreground placeholder:text-navy-foreground/40 focus:border-primary focus:outline-none transition"
             />
@@ -49,6 +51,7 @@ export function Contact() {
           <Field label="Top question for Ania">
             <input
               type="text"
+              name="question"
               placeholder="Visa, housing, work…"
               className="w-full bg-transparent border-b border-navy-foreground/30 py-3 text-navy-foreground placeholder:text-navy-foreground/40 focus:border-primary focus:outline-none transition"
             />

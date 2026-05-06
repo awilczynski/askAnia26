@@ -23,7 +23,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="flex flex-col md:flex-row md:items-center md:gap-8 max-w-3xl"
+            className="flex flex-col md:flex-row md:items-center md:gap-16 max-w-3xl"
           >
             <div className="text-center">
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.1] mb-6 text-navy">
@@ -37,7 +37,7 @@ export function Hero() {
             <div className="mt-8 md:mt-0 flex justify-center shrink-0">
               <a
                 href="#journey"
-                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 rounded-sm font-medium hover:opacity-90 transition shadow-warm"
+                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-10 py-4 text-lg rounded-sm font-medium hover:opacity-90 transition shadow-warm"
               >
                 Get Your Guide
               </a>

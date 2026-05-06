@@ -5,6 +5,7 @@ import { Trust } from "@/components/Trust";
 import { Journey } from "@/components/Journey";
 import { Testimonials } from "@/components/Testimonials";
 import { Blog } from "@/components/Blog";
+import { Options } from "@/components/Options";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 
@@ -21,6 +22,7 @@ function Index() {
       <Journey />
       <Testimonials />
       {/* <Blog /> */}
+      <Options />
       <Contact />
       <Footer />
     </main>
