@@ -48,7 +48,7 @@ export function Testimonials() {
                 className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[125%] h-[125%] max-w-none object-contain pointer-events-none select-none"
               />
               <div className="relative">
-                <h3 className="font-display text-xl font-bold text-primary mb-3">"{r.title}"</h3>
+                <h3 className="font-display text-xl font-bold text-foreground mb-3">"{r.title}"</h3>
                 <blockquote className="text-foreground/80 text-[15px] leading-relaxed mb-6">
                   "{r.quote}"
                 </blockquote>
