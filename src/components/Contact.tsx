@@ -7,6 +7,7 @@ export function Contact() {
   return (
     <section id="contact" className="bg-navy text-navy-foreground relative">
       <div className="mx-auto max-w-3xl px-6 md:px-12 py-12 md:py-16">
+        <h2 className="font-display text-4xl md:text-5xl text-primary mb-10 text-center">Contact Ania</h2>
         <form
           action="https://formspree.io/f/mjglovnq"
           method="POST"
