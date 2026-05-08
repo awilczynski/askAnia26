@@ -21,6 +21,26 @@ const cards = [
     body: "Monthly tips, policy updates, and stories straight to your inbox — no spam, just substance.",
     cta: "Subscribe",
   },
+  {
+    title: "First 30 Days Survival Guide",
+    body: "Everything you need to know for your first month in Poland, from emergency numbers to setting up your phone.",
+    cta: "Learn More",
+  },
+  {
+    title: "PESEL Registration Masterclass",
+    body: "Turn a confusing process into a straightforward task with our step-by-step guide.",
+    cta: "Get Started",
+  },
+  {
+    title: "Rental Search Strategy",
+    body: "Find your perfect home without the stress — complete with Polish-English lease review.",
+    cta: "Find Your Home",
+  },
+  {
+    title: "Healthcare Navigation Kit",
+    body: "Understanding Polish healthcare, finding English-speaking doctors, and managing prescriptions.",
+    cta: "Explore Healthcare",
+  },
 ];
 
 export function Journey() {
