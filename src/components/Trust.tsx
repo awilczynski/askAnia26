@@ -56,7 +56,7 @@ export function Trust() {
 
         <div className="grid md:grid-cols-2 gap-10 md:gap-16 max-w-4xl mx-auto">
           {items.map((item, i) => (
-            <div key={item.title} className="relative p-10 md:p-12">
+            <div key={item.title} className="relative p-10 md:p-12 overflow-hidden">
               <img
                 src={blobs[i]}
                 alt=""

@@ -40,7 +40,7 @@ export function Testimonials() {
 
         <div className="grid md:grid-cols-3 gap-10 md:gap-14">
           {reviews.map((r, i) => (
-            <figure key={r.name} className="relative p-10 md:p-12">
+            <figure key={r.name} className="relative p-10 md:p-12 overflow-hidden">
               <img
                 src={blobs[i]}
                 alt=""
