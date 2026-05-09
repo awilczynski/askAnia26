@@ -15,6 +15,7 @@ const cards = [
     title: "Ask Ania Anything",
     body: "Drop a question in our community space — get thoughtful answers from Ania and fellow newcomers.",
     cta: "Post a Question",
+    href: "#contact",
   },
   {
     title: "Newsletter Insights",
@@ -63,9 +64,15 @@ export function Journey() {
             >
               <h3 className="font-display text-xl mb-3">{c.title}</h3>
               <p className="text-navy-foreground/70 text-[15px] leading-relaxed mb-6">{c.body}</p>
-              <button className="inline-flex items-center gap-2 border border-primary text-primary px-5 py-2 rounded-sm text-sm font-medium hover:bg-primary hover:text-primary-foreground transition">
-                {c.cta} →
-              </button>
+              {c.href ? (
+                <a href={c.href} className="inline-flex items-center gap-2 border border-primary text-primary px-5 py-2 rounded-sm text-sm font-medium hover:bg-primary hover:text-primary-foreground transition">
+                  {c.cta} →
+                </a>
+              ) : (
+                <button className="inline-flex items-center gap-2 border border-primary text-primary px-5 py-2 rounded-sm text-sm font-medium hover:bg-primary hover:text-primary-foreground transition">
+                  {c.cta} →
+                </button>
+              )}
             </div>
           ))}
         </div>
