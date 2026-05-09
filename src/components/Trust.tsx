@@ -47,7 +47,7 @@ const items = [
 
 export function Trust() {
   return (
-    <section className="bg-stone relative">
+    <section className="bg-stone relative overflow-hidden">
       <div className="mx-auto max-w-6xl px-6 md:px-12 py-12 md:py-16">
         <div className="text-center mb-10">
           <h2 className="font-display text-4xl md:text-5xl mb-4">Why People Trust AskAnia</h2>
@@ -56,7 +56,7 @@ export function Trust() {
 
         <div className="grid md:grid-cols-2 gap-10 md:gap-16 max-w-4xl mx-auto">
           {items.map((item, i) => (
-            <div key={item.title} className="relative p-10 md:p-12 overflow-hidden">
+            <div key={item.title} className="relative p-10 md:p-12">
               <img
                 src={blobs[i]}
                 alt=""

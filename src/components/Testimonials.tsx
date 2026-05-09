@@ -31,7 +31,7 @@ const reviews = [
 
 export function Testimonials() {
   return (
-    <section className="bg-stone relative">
+    <section className="bg-stone relative overflow-hidden">
       <div className="mx-auto max-w-6xl px-6 md:px-12 py-12 md:py-16">
         <div className="text-center mb-10">
           <h2 className="font-display text-4xl md:text-5xl mb-4">What Our Community Says</h2>
@@ -40,7 +40,7 @@ export function Testimonials() {
 
         <div className="grid md:grid-cols-3 gap-10 md:gap-14">
           {reviews.map((r, i) => (
-            <figure key={r.name} className="relative p-10 md:p-12 overflow-hidden">
+            <figure key={r.name} className="relative p-10 md:p-12">
               <img
                 src={blobs[i]}
                 alt=""
