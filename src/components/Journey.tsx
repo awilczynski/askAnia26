@@ -10,6 +10,7 @@ const cards = [
     title: "1:1 Consultation",
     body: "Book a 45-minute video call with Ania for personalized guidance on your unique situation.",
     cta: "Book a Call",
+    href: "https://calendly.com/aawzgb/30min",
   },
   {
     title: "Ask Ania Anything",
@@ -65,7 +66,7 @@ export function Journey() {
               <h3 className="font-display text-xl mb-3">{c.title}</h3>
               <p className="text-navy-foreground/70 text-[15px] leading-relaxed mb-6">{c.body}</p>
               {c.href ? (
-                <a href={c.href} className="inline-flex items-center gap-2 border border-primary text-primary px-5 py-2 rounded-sm text-sm font-medium hover:bg-primary hover:text-primary-foreground transition">
+                <a href={c.href} target={c.href.startsWith('http') ? '_blank' : undefined} rel={c.href.startsWith('http') ? 'noreferrer' : undefined} className="inline-flex items-center gap-2 border border-primary text-primary px-5 py-2 rounded-sm text-sm font-medium hover:bg-primary hover:text-primary-foreground transition">
                   {c.cta} →
                 </a>
               ) : (
